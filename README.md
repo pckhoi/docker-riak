@@ -89,6 +89,17 @@ Bringing up cluster nodes:
 Please wait approximately 30 seconds for the cluster to stabilize.
 ```
 
+### Expose cluster port and ip on env
+
+Sometime you might want to expose Riak host and ports to env perhaps to
+connect to a node server on local dev machine. You can do this:
+
+```bash
+source bin/cluster-env.sh
+```
+
+`RIAK_HOST` and `RIAK_PORTS` will then be available in your env.
+
 ## Testing
 
 From outside the container, we can interact with the
